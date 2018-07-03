@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="660.0" prefWidth="900.0" stylesheets="@MetroWhite.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PrediksiPSOACOR">
+   <children>
+      <SplitPane dividerPositions="0.2581453634085213" layoutX="100.0" layoutY="8.0" prefHeight="660.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="660.0" prefWidth="220.0" styleClass="background">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="25.0" layoutY="14.0" text="Parameter PSOACOR" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="13.0" layoutY="42.0" prefHeight="478.0" prefWidth="180.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="127.0" />
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="82.0" minWidth="10.0" prefWidth="47.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER_RIGHT" text="q">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="xi" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="w" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="k" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="C1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="C2" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="PopSize" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="Semut Baru" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="minKonvergen" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="Max Iterasi" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="minTahun Latih" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="maxTahun Latih" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="minTahun Uji" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="maxTahun Uji" GridPane.rowIndex="13">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="xMin Intersep" GridPane.rowIndex="14">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="xMax Intersep" GridPane.rowIndex="15">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="xMin Koefisien" GridPane.rowIndex="16">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" text="xMax Koefisien" GridPane.rowIndex="17">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="q" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="xi">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="w" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="k" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="c1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="c2" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="popSize" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="m" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="minKonvergen" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="maxIterasi" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="minTahunLatih" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="maxTahunLatih" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="minTahunUji" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="maxTahunUji" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="14" fx:id="xMinIntersep">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="15" fx:id="xMaxIntersep">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="16" fx:id="xMinKoef">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="17" fx:id="xMaxKoef">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Hyperlink layoutX="85.0" layoutY="507.0" onAction="#handleRefreshParameter" text="Refresh Parameter" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="20.0" />
+                  <Button layoutX="26.0" layoutY="569.0" mnemonicParsing="false" onAction="#handleUbahParameter" prefHeight="33.0" prefWidth="153.0" text="Ubah Parameter" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+                  <Button defaultButton="true" layoutX="25.0" layoutY="612.0" mnemonicParsing="false" onAction="#handleProses" prefHeight="33.0" prefWidth="153.0" text="Proses" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="680.0">
+               <children>
+                  <SplitPane dividerPositions="0.49" orientation="VERTICAL" prefHeight="660.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane styleClass="background">
+                           <children>
+                              <LineChart fx:id="fitnessLineChart" layoutX="30.0" legendVisible="false" prefHeight="369.0" prefWidth="639.0" title="Nilai Fitness" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                <xAxis>
+                                  <CategoryAxis label="Iterasi" prefWidth="619.0" tickLabelGap="0.0" tickLength="0.0" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis forceZeroInRange="false" label="Fitness" prefHeight="384.0" prefWidth="5.0" side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                              <Hyperlink layoutX="533.0" layoutY="3.0" onAction="#handleDetailFitness" prefHeight="23.0" prefWidth="79.0" text="Detail Fitness" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane styleClass="background">
+                           <children>
+                              <LineChart fx:id="mapeLineChart" layoutY="-11.0" legendSide="TOP" prefHeight="306.0" prefWidth="654.0" styleClass="background" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                 <xAxis>
+                                    <CategoryAxis label="Tahun" prefWidth="619.0" tickLabelGap="0.0" tickLength="0.0" />
+                                 </xAxis>
+                                 <yAxis>
+                                    <NumberAxis label="Konsumsi Energi Primer" prefHeight="384.0" prefWidth="5.0" side="LEFT" />
+                                 </yAxis>
+                              </LineChart>
+                              <Hyperlink onAction="#handleDetailPrediksi" text="Detail Hasil Prediksi" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" />
+                              <Label layoutX="15.0" layoutY="290.0" text="Y =" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="15.0" />
+                              <TextField fx:id="nilaiRegresi" editable="false" layoutX="50.0" layoutY="284.0" prefHeight="37.0" prefWidth="604.0" promptText="Pemodelan Regresi Linear" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

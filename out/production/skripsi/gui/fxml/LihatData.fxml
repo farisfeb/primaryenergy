@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" stylesheets="@MetroWhite.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LihatData">
+   <children>
+      <TableView fx:id="tabelLihatData" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="kolomTahun" prefWidth="40.0" text="Tahun" />
+            <TableColumn fx:id="kolomEnergiPrimer" prefWidth="90.0" text="Energi Primer" />
+            <TableColumn fx:id="kolomGNI" prefWidth="90.0" text="GNI" />
+            <TableColumn fx:id="kolomGDP" prefWidth="90.0" text="GDP" />
+            <TableColumn fx:id="kolomPopulasi" prefWidth="90.0" text="Populasi" />
+            <TableColumn fx:id="kolomImpor" prefWidth="90.0" text="Impor" />
+            <TableColumn fx:id="kolomEkspor" prefWidth="90.0" text="Ekspor" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

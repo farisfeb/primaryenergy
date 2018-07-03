@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="680.0" prefWidth="900.0" stylesheets="@MetroWhite.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Root">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Prediksi">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handlePrediksiPSOACOR" text="Prediksi dengan PSOACOR (1)" />
+                  <MenuItem mnemonicParsing="false" onAction="#handlePrediksiPSO" text="Prediksi dengan PSO (2)" />
+                  <MenuItem mnemonicParsing="false" onAction="#handlePrediksiACOR" text="Prediksi dengan ACOR (3)" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Lihat Data">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleLihatData" text="Lihat Data Konsumsi Energi" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleLihatRegresi" text="Lihat Regresi Terbaik" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="About">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
